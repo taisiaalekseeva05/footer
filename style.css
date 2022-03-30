@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* .page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+} */
+
+.page{
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.header,
+.footer{
+    padding: 20px;
+    background-color: #2725b5;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+.content{
+    max-width: 800px;
+    margin: o auto;
+    padding: 40px 20px;
+}
